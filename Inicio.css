@@ -1,0 +1,66 @@
+body {
+    background-color: #074173;
+}
+
+.navbar {
+    background-color: #58A399;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.card img {
+    width: 1000px;
+    height: auto;
+    margin: 5PX;
+} 
+
+.imagen-icon {
+    max-width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita que la imagen sobresalga del contenedor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #E2F4C5
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #58A399;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.btn:hover {
+    background-color: #B0B7A8;
+}
+
+.img.container .lado-1 {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row; 
+    align-items: center;
+}
