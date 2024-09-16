@@ -1,0 +1,42 @@
+body {
+    background-color: #074173;
+    background-image: url(IMG/Illustration\ 7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-caption h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 
+        1px 1px 0 #074173, /* Sombra inferior derecha */
+        -1px -1px 0 #074173, /* Sombra superior izquierda */
+        1px -1px 0 #074173, /* Sombra superior derecha */
+        -1px 1px 0 #074173; /* Sombra inferior izquierda */
+    
+}
+
+.carousel-caption p {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #fff
+
+}
+
+.text-exp h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #e2f4c5;
+
+}
+
+.text-exp p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #b0b7a8;
+
+}
