@@ -273,6 +273,97 @@
                 </div>
             </div>
         </section>
+
+        <div class="container-fluid text-center"></div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <!-- Formulario de registro con clase personalizada -->
+                    <form id="infoForm" onsubmit="mostrarBienvenida(event)" class="custom-form">
+                        <h1 class="mb-4">¡Regístrate!</h1>
+                        <!-- Nombres -->
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label label-custom">Tus nombres</label>
+                            <input type="text" class="form-control input-custom" id="nameInput" placeholder="Juan Alberto"
+                                required>
+                        </div>
+                        <!-- Apellidos -->
+                        <div class="mb-3">
+                            <label for="surnameInput" class="form-label label-custom">Tus apellidos</label>
+                            <input type="text" class="form-control input-custom" id="surnameInput" placeholder="Pérez Pérez"
+                                required>
+                        </div>
+                        <!-- Correo electrónico -->
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label label-custom">Tu correo electrónico</label>
+                            <input type="email" class="form-control input-custom" id="emailInput"
+                                placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <!-- Selecciona código de país y número de teléfono -->
+                        <div class="mb-3 d-flex align-items-center">
+                            <label for="countrySelect" class="form-label me-2 label-custom">Código de país</label>
+                            <select class="form-select me-2 input-custom" id="countrySelect" required>
+                                <!-- Países e indicativos en js -->
+                            </select>
+                            <input type="tel" class="form-control input-custom" id="phoneInput" placeholder="1234567890"
+                                pattern="[0-9]{10}" title="Ingrese un número de teléfono válido con 10 dígitos" required>
+                        </div>
+                        <!-- Checkbox términos y condiciones -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label label-custom" for="termsCheck">
+                                Acepto las políticas, términos y condiciones.Clic aquí.</span>
+                            </label>
+                        </div>
+        
+                        <!-- Botón del formulario -->
+                        <button type="submit" class="btn btn-primary btn-custom" onclick="mostrarBienvenida(event)">¡Quiero más
+                            información!</button>
+                    </form>
+        
+                    <!-- Modal de bienvenida -->
+                    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="welcomeModalLabel">¡Te has registrado!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- Mensaje de bienvenida al registrarse -->
+                                <div class="modal-body">
+                                    <p id="mensajeBienvenida"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Quiero seguir
+                                        comprando</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Modal olvidaste tu contraseña -->
+                    <div class="modal fade" id="resetPasswordModal" tabindex="-1" aria-labelledby="resetPasswordModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="resetPasswordModalLabel">Restablecer Contraseña</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- Mensaje para restablecer contraseña -->
+                                <div class="modal-body">
+                                    <p id="olvidasteContraseña"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
     
     </main>
 
